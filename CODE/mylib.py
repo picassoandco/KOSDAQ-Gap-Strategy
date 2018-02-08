@@ -4,9 +4,9 @@ import numpy as np
 import matplotlib
 matplotlib.rc('font', family='Malgun Gothic',size=8, weight = 'bold')
 
-KOSDAQ_Data = pd.ExcelFile('KOSDAQ2.xlsx', header = 2)
-KOSDAQ = pd.read_excel('KOSDAQ2.xlsx', sheetnames=0, header=1)
-KOSDAQ150 = pd.read_excel('KOSDAQ2.xlsx', sheetnames=1)
+KOSDAQ_Data = pd.ExcelFile('C:/Users/이세령/picasso/KOSDAQ-Gap-Strategy/DATA/KOSDAQ2.xlsx', header = 2)
+KOSDAQ = pd.read_excel('C:/Users/이세령/picasso/KOSDAQ-Gap-Strategy/DATA/KOSDAQ2.xlsx', sheetnames=0, header=1)
+KOSDAQ150 = pd.read_excel('C:/Users/이세령/picasso/KOSDAQ-Gap-Strategy/DATA/KOSDAQ2.xlsx', sheetnames=1)
 
 
 # 함수정의
@@ -64,7 +64,6 @@ def SR(포트폴리오수익률, 무위험이자):
     rf = 무위험이자
     ex = pf-rf
     sr = ex.cumprod()/pf.std()
-
     return sr
 
 

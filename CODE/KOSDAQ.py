@@ -5,12 +5,12 @@ import matplotlib
 import mylib as my
 matplotlib.rc('font', family='Malgun Gothic',size=8, weight = 'bold')
 
-KOSDAQ_Data = pd.ExcelFile('KOSDAQ2.xlsx', header = 2)
-KOSDAQ = pd.read_excel('KOSDAQ2.xlsx', sheetnames=0, header=1)
-KOSDAQ150 = pd.read_excel('KOSDAQ2.xlsx', sheetnames=1)
-국고채3년 = pd.read_excel('KOSDAQ2.xlsx', sheetname=2)
-코스닥인버스 = pd.read_excel('KOSDAQ2.xlsx', sheetname=3, header=1)
-금리 = pd.read_excel('KOSDAQ2.xlsx', sheetname=4, header=1)
+KOSDAQ_Data = pd.ExcelFile('C:/Users/이세령/picasso/KOSDAQ-Gap-Strategy/DATA/KOSDAQ2.xlsx', header = 2)
+KOSDAQ = pd.read_excel('C:/Users/이세령/picasso/KOSDAQ-Gap-Strategy/DATA/KOSDAQ2.xlsx', sheetnames=0, header=1)
+KOSDAQ150 = pd.read_excel('C:/Users/이세령/picasso/KOSDAQ-Gap-Strategy/DATA/KOSDAQ2.xlsx', sheetnames=1)
+국고채3년 = pd.read_excel('C:/Users/이세령/picasso/KOSDAQ-Gap-Strategy/DATA/KOSDAQ2.xlsx', sheetname=2)
+코스닥인버스 = pd.read_excel('C:\Users\이세령\picasso\KOSDAQ-Gap-Strategy\DATA\KOSDAQ2.xlsx', sheetname=3, header=1)
+금리 = pd.read_excel('C:\Users\이세령\picasso\KOSDAQ-Gap-Strategy\DATA\KOSDAQ2.xlsx', sheetname=4, header=1)
 
 
 
